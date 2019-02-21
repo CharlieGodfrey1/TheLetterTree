@@ -1,0 +1,15 @@
+$theme-colors: (
+  "primary": #634b32,
+  "secondary": #e2c231,
+  "transparent": #0000
+);
+
+.navbar {
+	transition: background-color 0.4s ease-out;
+}
+
+#titlePage {
+	background: url("https://via.placeholder.com/1920x1080") no-repeat center center;
+}
+
+@import "../../bootstrap/scss/bootstrap";
