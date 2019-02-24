@@ -3,7 +3,7 @@ $theme-colors: (
 	"secondary": #e2c231,
 	"grey1": #444642,
 	"grey2": #f7f8f4,
-  "transparent": #0000
+	"transparent": #0000
 );
 
 $navbar-dark-color: rgba(map-get($theme-colors, secondary), .5);
