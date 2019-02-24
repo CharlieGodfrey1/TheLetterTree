@@ -6,23 +6,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<link rel="icon" href="img/favicon.ico">
+	<link rel="icon" href="static/thelettertree/img/favicon.ico">
 	<title>The Letter Tree</title>
 	<link rel="stylesheet" href="static/thelettertree/css/custom.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="static/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="static/photoswipe/css/photoswipe.css">
+	<link rel="stylesheet" href="static/photoswipe/css/default-skin/default-skin.css">
 </head>
 
 <body>
 	<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-transparent">
 		<div class="container">
-			<a class="navbar-brand" href="#">The Letter Tree</a>
+			<a class="navbar-brand" href="#titlePage">The Letter Tree</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarToggler">
-				<ul class="navbar-nav ml-auto mt-2">
+				<ul id="navbar-scroll" class="navbar-nav ml-auto">
 					<li class="nav-item">
 						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#gallery">Gallery</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#contact">Contact</a>
@@ -32,20 +37,170 @@
 		</div>
 	</nav>
 
-	<div id="titlePage" class="d-flex w-100 vh-100 justify-content-center align-items-center">
-		<div>The Letter Tree</div>
+	<div id="titlePage" class="d-flex flex-column w-100 vh-100 justify-content-center align-items-center">
+		<div id="title" class="display-1 text-white">The Letter Tree</div>
+		<div id="subtitle" class="display-4 text-white">Making Big Letters</div>
+		<!-- <svg xmlns="http://www.w3.org/2000/svg" id="svg8" width="226.13809" height="23.738401" viewBox="0 0 59.832371 6.2807856">
+			<g id="layer1" transform="translate(1.1e-7 -106.66902)">
+			  <g id="g1460" fill="none" stroke="#000" transform="translate(5.716762 110.23765) scale(.28549)">
+				<path id="path2362" d="M-13.024369-12V9"/>
+				<path id="path1430" d="M-20.024369-12h14.0000004"/>
+				<path id="path2366" d="M1.3765203-12V9"/>
+				<path id="path1432" d="M1.3765203-1l3-3 2-1h3L11.37652-4l1 3V9"/>
+				<path id="path1434" d="M18.028578 1h12v-2l-1-2-1-1-2-1h-3l-2 1-2 2-1 3v2l1 3 2 2 2 1h3l2-1 2-2"/>
+				<path id="path2370" d="M44.06099-12V9"/>
+				<path id="path1438" d="M44.06099 9h12"/>
+				<path id="path1440" d="M59.578158 1h12v-2l-1-2-1-1-2-1h-3l-2 1-2 2-1 3v2l1 3 2 2 2 1h3l2-1 2-2"/>
+				<path id="path2374" d="M77.707413-12V5l1 3 2 1h2"/>
+				<path id="path1442" d="M74.707413-5h7"/>
+				<path id="path2378" d="M88.096559-12V5l1 3 2 1h2"/>
+				<path id="path1444" d="M85.096559-5h7"/>
+				<path id="path1446" d="M97.03653 1h12v-2l-1-2-1-1-2-1h-3l-2 1-2 2-1 3v2l1 3 2 2 2 1h3l2-1 2-2"/>
+				<path id="path2382" d="M114.76043-5V9"/>
+				<path id="path1448" d="M114.76043 1l1-3 2-2 2-1h3"/>
+				<path id="path2386" d="M137.69181-12V9"/>
+				<path id="path1452" d="M130.69181-12h14"/>
+				<path id="path2390" d="M150.89476-5V9"/>
+				<path id="path1454" d="M150.89476 1l1-3 2-2 2-1h3"/>
+				<path id="path1456" d="M160.36969 1h12v-2l-1-2-1-1-2-1h-3l-2 1-2 2-1 3v2l1 3 2 2 2 1h3l2-1 2-2"/>
+				<path id="path1458" d="M177.05327 1h12v-2l-1-2-1-1-2-1h-3l-2 1-2 2-1 3v2l1 3 2 2 2 1h3l2-1 2-2"/>
+			  </g>
+			</g>
+		  </svg> -->
+		</div>
+
+	<div id="about" class="container-fluid w-100 py-5 bg-grey2">
+		<div class="row">
+			<div class="col-sm text-center">
+				<div class="d-flex flex-column justify-content-center h-100 align-items-center">
+					<div class="mt-5 fa-stack fa-2x text-secondary">
+						<i class="far fa-circle fa-stack-2x"></i>
+						<i class="fas fa-info fa-stack-1x"></i>
+					</div>
+					<div class="mb-5 text-primary section-title">
+						About
+					</div>
+				</div>
+			</div>
+			<div class="col-sm text-grey1">
+				some text in here some text in here some text in here some text in here some text in here some text in here some text in here some text in here some text in here <br/><br/>
+				some text in here some text in here some text in here some text in here some text in here some text in here some text in here some text in here some text in here <br/><br/>
+				some text in here some text in here some text in here some text in here some text in here some text in here some text in here some text in here some text in here <br/><br/>
+				some text in here some text in here some text in here some text in here some text in here some text in here some text in here some text in here some text in here <br/><br/>
+				some text in here some text in here some text in here some text in here some text in here some text in here some text in here some text in here some text in here <br/><br/>
+				some text in here some text in here some text in here some text in here some text in here some text in here some text in here some text in here some text in here <br/><br/>
+				some text in here some text in here some text in here some text in here some text in here some text in here some text in here some text in here some text in here <br/><br/>
+				some text in here some text in here some text in here some text in here some text in here some text in here some text in here some text in here some text in here
+			</div>
+		</div>
 	</div>
 
-	<div id="about">
-		About
+	<div id="gallery">
+		<div class="card-columns">
+			<div class="card m-0 border-0">
+				<img class="card-img-top rounded-0" src="static/thelettertree/img/gallery/small/image1.jpeg">
+			</div>
+			<div class="card m-0 border-0">
+				<img class="card-img-top rounded-0" src="static/thelettertree/img/gallery/small/image1.png">
+			</div>
+			<div class="card m-0 border-0">
+				<img class="card-img-top rounded-0" src="static/thelettertree/img/gallery/small/image2.jpg">
+			</div>
+			<div class="card m-0 border-0">
+				<img class="card-img-top rounded-0" src="static/thelettertree/img/gallery/small/image2.png">
+			</div>
+			<div class="card m-0 border-0">
+				<img class="card-img-top rounded-0" src="static/thelettertree/img/gallery/small/image3.jpg">
+			</div>
+			<div class="card m-0 border-0">
+				<img class="card-img-top rounded-0" src="static/thelettertree/img/gallery/small/image3.png">
+			</div>
+			<div class="card m-0 border-0">
+				<img class="card-img-top rounded-0" src="static/thelettertree/img/gallery/small/image4.jpg">
+			</div>
+			<div class="card m-0 border-0">
+				<img class="card-img-top rounded-0" src="static/thelettertree/img/gallery/small/image4.png">
+			</div>
+		</div>
 	</div>
 
-	<div id="contact">
-		Contact
+	<div id="contact" class="container-fluid w-100 py-5">
+		<div class="row">
+			<div class="col-sm text-center">
+				<div class="d-flex flex-column justify-content-center h-100 align-items-center">
+					<i class="pt-5 text-secondary fas fa-4x fa-long-arrow-alt-right"></i>
+					<div class="pb-5 text-primary section-title">
+						Contact Us
+					</div>
+				</div>
+			</div>
+			<div id="contact-details" class="col-sm">
+				<div class="d-flex flex-column justify-content-center h-100 align-items-center">
+					<a href="tel:+441234567890">
+						<i class="fas fa-phone"></i> 01234 567890
+					</a>
+					<br/>
+					<a href="mailto:contact@thelettertree.co.uk">
+						<i class="fas fa-envelope"></i> contact@thelettertree.co.uk
+					</a>
+				</div>
+			</div>
+		</div>
 	</div>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<!-- Root element of PhotoSwipe. Must have class pswp. -->
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+		<!-- Background of PhotoSwipe. It's a separate element as animating opacity is faster than rgba(). -->
+		<div class="pswp__bg"></div>
+		<!-- Slides wrapper with overflow:hidden. -->
+		<div class="pswp__scroll-wrap">
+			<!-- Container that holds slides. PhotoSwipe keeps only 3 of them in the DOM to save memory.Don't modify these 3 pswp__item elements, data is added later on. -->
+			<div class="pswp__container">
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+			</div>
+			<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+			<div class="pswp__ui pswp__ui--hidden">
+				<div class="pswp__top-bar">
+					<!--  Controls are self-explanatory. Order can be changed. -->
+					<div class="pswp__counter"></div>
+					<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+					<button class="pswp__button pswp__button--share" title="Share"></button>
+					<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+					<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+					<!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+					<!-- element will get class pswp__preloader--active when preloader is running -->
+					<div class="pswp__preloader">
+						<div class="pswp__preloader__icn">
+							<div class="pswp__preloader__cut">
+								<div class="pswp__preloader__donut"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+					<div class="pswp__share-tooltip"></div>
+				</div>
+				<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+				</button>
+				<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+				</button>
+				<div class="pswp__caption">
+					<div class="pswp__caption__center"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <script src="static/jquery/js/jquery-3.3.1.slim.min.js"></script> -->
+	<script src="static/jquery/js/jquery-3.3.1.min.js"></script>
 	<script src="static/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="static/photoswipe/js/photoswipe.min.js"></script>
+	<script src="static/photoswipe/js/photoswipe-ui-default.min.js"></script>
+	<script src="static/segment/js/segment.min.js"></script>
+	<script src="static/thelettertree/js/data.js"></script>
 	<script src="static/thelettertree/js/custom.js"></script>
 </body>
 

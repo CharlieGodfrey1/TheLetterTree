@@ -1,15 +1,114 @@
 $theme-colors: (
-  "primary": #634b32,
-  "secondary": #e2c231,
+	"primary": #584836,
+	"secondary": #e2c231,
+	"grey1": #444642,
+	"grey2": #f7f8f4,
   "transparent": #0000
 );
 
+$navbar-dark-color: rgba(map-get($theme-colors, secondary), .5);
+$navbar-dark-hover-color: rgba(map-get($theme-colors, secondary), .7);
+$navbar-dark-active-color: map-get($theme-colors, secondary);
+
+$enable-responsive-font-sizes: true;
+
+$card-columns-gap: 0;
+$card-columns-count: 3;
+
+@keyframes lightup {
+	from,
+	20%,
+	24%,
+	44%,
+	48%,
+	66%,
+	70%,
+	80%,
+	84%,
+	86%,
+	90%,
+	94% {
+		opacity: 0;
+	}
+	
+	22%,
+	46%,
+	68%,
+	82%,
+	88%,
+	92%,
+	96%,
+	to {
+		opacity: 1;
+	}
+}
+
+body {
+	position: relative;
+}
+
+a {
+	transition: all 0.3s ease;
+}
+
 .navbar {
 	transition: background-color 0.4s ease-out;
+	.navbar-brand {
+		font-size: 1.6rem;
+	}
+	#navbar-scroll{
+		.nav-link {
+			font-size: 1.4rem;
+			padding-left: 2.5rem;
+		}
+	}
 }
 
 #titlePage {
-	background: url("https://via.placeholder.com/1920x1080") no-repeat center center;
+	background: url("../../thelettertree/img/title.png") no-repeat center center;
+}
+
+#title {
+	text-shadow: 2px 2px #000000aa, 0 0 30px map-get($theme-colors, secondary);
+	animation-name: lightup;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+
+#subtitle {
+	text-shadow: 1px 1px #000000aa, 0 0 40px map-get($theme-colors, secondary);
+	animation-name: lightup;
+	animation-duration: 1s;
+	animation-delay: 0.65s;
+	animation-fill-mode: both;
+}
+
+.section-title {
+	font-size: 3rem;
+}
+
+#gallery {
+	.card {
+		border-radius: 0;
+	}
+
+	img {
+		cursor: pointer;
+		filter: grayscale(100%);
+		transition: .5s ease;
+	}
+	
+	img:hover{
+		filter: none;
+	}
+}
+
+#contact-details {
+	font-size: 1.5rem;
+	a {
+		line-height: 2rem;
+		color: map-get($theme-colors, secondary);
+	}
 }
 
 @import "../../bootstrap/scss/bootstrap";
